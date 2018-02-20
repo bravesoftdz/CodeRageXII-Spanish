@@ -1,0 +1,147 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error, FireDAC.UI.Intf,
+  FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.FB,
+  FireDAC.Phys.FBDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, Data.DB,
+  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, FireDAC.Comp.DataSet, FireDAC.Comp.Client, System.Diagnostics;
+
+type
+  TForm2 = class(TForm)
+    DemocoderagexiiConnection: TFDConnection;
+    FDQuery1: TFDQuery;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    Abrir: TButton;
+    Button1: TButton;
+    Button2: TButton;
+    lbTiempo: TLabel;
+    procedure AbrirClick(Sender: TObject);
+    procedure DemocoderagexiiConnectionLost(Sender: TObject);
+    procedure DemocoderagexiiConnectionRecover(ASender, AInitiator: TObject; AException: Exception;
+      var AAction: TFDPhysConnectionRecoverAction);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm2.AbrirClick(Sender: TObject);
+begin
+  FDQuery1.Close;
+  FDQuery1.Open;
+end;
+
+procedure TForm2.Button1Click(Sender: TObject);
+var
+  vQ: TFDQuery;
+  SW: TStopwatch;
+begin
+  vQ := TFDQuery.Create(nil);
+  try
+    vQ.Connection := DemocoderagexiiConnection;
+    vQ.SQL.Add
+      ('insert into clientes_copia (CODIGO, NOMBRE, DIRECCION, TELEFONO, EMAIL) values (:CODIGO, :NOMBRE, :DIRECCION, :TELEFONO, :EMAIL)');
+
+    FDQuery1.First;
+    FDQuery1.DisableControls;
+
+    SW := TStopwatch.Create;
+    SW.Start;
+    while not FDQuery1.Eof do
+    begin
+      vQ.Close;
+      vQ.ParamByName('CODIGO').AsInteger := FDQuery1.FieldByName('CODIGO').AsInteger;
+      vQ.ParamByName('NOMBRE').AsString := FDQuery1.FieldByName('NOMBRE').AsString;
+      vQ.ParamByName('DIRECCION').AsString := FDQuery1.FieldByName('DIRECCION').AsString;
+      vQ.ParamByName('TELEFONO').AsString := FDQuery1.FieldByName('TELEFONO').AsString;
+      vQ.ParamByName('EMAIL').AsString := FDQuery1.FieldByName('EMAIL').AsString;
+      vQ.ExecSQL;
+
+      FDQuery1.Next;
+    end;
+    SW.Stop;
+
+    lbTiempo.Caption := SW.Elapsed.Minutes.ToString + ':' + SW.Elapsed.Seconds.ToString;
+
+  finally
+    vQ.DisposeOf;
+    FDQuery1.EnableControls;
+  end;
+end;
+
+procedure TForm2.Button2Click(Sender: TObject);
+var
+  vI: Integer;
+  vQ: TFDQuery;
+  SW: TStopwatch;
+begin
+  vQ := TFDQuery.Create(nil);
+  try
+    vQ.Connection := DemocoderagexiiConnection;
+    vQ.SQL.Add
+      ('insert into clientes_copia (CODIGO, NOMBRE, DIRECCION, TELEFONO, EMAIL) values (:CODIGO, :NOMBRE, :DIRECCION, :TELEFONO, :EMAIL)');
+
+    vQ.Params[0].DataType := ftInteger;
+    vQ.Params[1].DataType := ftString;
+    vQ.Params[2].DataType := ftString;
+    vQ.Params[3].DataType := ftString;
+    vQ.Params[4].DataType := ftString;
+
+    vQ.Params.ArraySize := 17849;
+
+    FDQuery1.First;
+    FDQuery1.DisableControls;
+
+    vI := 0;
+    SW := TStopwatch.Create;
+    SW.Start;
+    while not FDQuery1.Eof do
+    begin
+      vQ.Close;
+      vQ.Params[0] := FDQuery1.FieldByName('CODIGO').AsInteger;
+      vQ.ParamByName('NOMBRE').AsString[vI] := FDQuery1.FieldByName('NOMBRE').AsString;
+      vQ.ParamByName('DIRECCION').AsString[vI] := FDQuery1.FieldByName('DIRECCION').AsString;
+      vQ.ParamByName('TELEFONO').AsString[vI] := FDQuery1.FieldByName('TELEFONO').AsString;
+      vQ.ParamByName('EMAIL').AsString[vI] := FDQuery1.FieldByName('EMAIL').AsString;
+
+      Inc(vI);
+
+      FDQuery1.Next;
+    end;
+    FDQuery1.Execute(17849, 0);
+
+    SW.Stop;
+
+    lbTiempo.Caption := SW.Elapsed.Minutes.ToString + ':' + SW.Elapsed.Seconds.ToString;
+
+  finally
+    vQ.DisposeOf;
+    FDQuery1.EnableControls;
+  end;
+end;
+
+procedure TForm2.DemocoderagexiiConnectionLost(Sender: TObject);
+begin
+  ShowMessage('Se ha perdido la conexión');
+end;
+
+procedure TForm2.DemocoderagexiiConnectionRecover(ASender, AInitiator: TObject; AException: Exception;
+  var AAction: TFDPhysConnectionRecoverAction);
+begin
+  AAction := faRetry;
+end;
+
+end.

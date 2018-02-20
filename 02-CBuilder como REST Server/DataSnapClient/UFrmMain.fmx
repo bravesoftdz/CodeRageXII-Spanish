@@ -1,0 +1,105 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 480
+  ClientWidth = 370
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 370.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 370.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Listado de Paises'
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Align = Right
+      Position.X = 290.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbutton'
+      TabOrder = 1
+      Text = 'Button1'
+      OnClick = Button1Click
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 370.000000000000000000
+    Size.Height = 440.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://localhost:8080/datasnap/rest/TServerMethods1/GetCountries'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 40
+    Top = 112
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <
+      item
+        Kind = pkREQUESTBODY
+        name = 'body'
+        Options = [poDoNotEncode]
+        ContentType = ctAPPLICATION_JSON
+      end>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 40
+    Top = 168
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 40
+    Top = 216
+  end
+  object RESTClient2: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://localhost:8080/Country'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 192
+    Top = 112
+  end
+  object RESTRequest2: TRESTRequest
+    Client = RESTClient2
+    Params = <
+      item
+        Kind = pkREQUESTBODY
+        name = 'body'
+        Options = [poDoNotEncode]
+        ContentType = ctAPPLICATION_JSON
+      end>
+    Response = RESTResponse2
+    SynchronizedEvents = False
+    Left = 192
+    Top = 176
+  end
+  object RESTResponse2: TRESTResponse
+    ContentType = 'application/json'
+    Left = 192
+    Top = 240
+  end
+end

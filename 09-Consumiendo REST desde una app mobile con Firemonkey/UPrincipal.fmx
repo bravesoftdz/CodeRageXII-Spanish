@@ -1,0 +1,198 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object btnConsumir: TButton
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Consumir'
+    OnClick = btnConsumirClick
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 407.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 407.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = None
+      Sizes = (
+        640s
+        407s
+        640s
+        407s)
+      object Tab1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Tab1'
+        object Layout2: TLayout
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 407.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lvDatos: TListView
+            ItemAppearanceClassName = 'TListItemAppearance'
+            ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Size.Width = 640.000000000000000000
+            Size.Height = 407.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnItemClick = lvDatosItemClick
+          end
+        end
+      end
+      object Tab2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Tab2'
+        object Layout3: TLayout
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 407.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object edtNombre: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Top
+            TabOrder = 0
+            Size.Width = 640.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Web: TWebBrowser
+            Size.Width = 209.000000000000000000
+            Size.Height = 225.000000000000000000
+            Size.PlatformDefault = False
+            Position.X = 40.000000000000000000
+            Position.Y = 64.000000000000000000
+          end
+          object Button1: TButton
+            Align = Bottom
+            Position.Y = 363.000000000000000000
+            Size.Width = 640.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Regresar'
+            OnClick = Button1Click
+          end
+        end
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'https://reqres.in/api/users?page=2'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 56
+    Top = 376
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 104
+    Top = 376
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    RootElement = 'data'
+    Left = 152
+    Top = 376
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 208
+    Top = 376
+  end
+  object FDMemTable1: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    Left = 256
+    Top = 376
+    object FDMemTable1id: TStringField
+      FieldName = 'id'
+      Size = 10
+    end
+    object FDMemTable1first_name: TStringField
+      FieldName = 'first_name'
+      Size = 50
+    end
+    object FDMemTable1last_name: TStringField
+      FieldName = 'last_name'
+      Size = 50
+    end
+    object FDMemTable1avatar: TStringField
+      FieldName = 'avatar'
+      Size = 150
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 392
+    Top = 384
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 348
+    Top = 381
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = lvDatos
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillValueFieldName = 'id'
+      FillDisplayFieldName = 'first_name'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

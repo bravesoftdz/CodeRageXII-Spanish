@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/02/14 05:53:53.000.849,=C:\Developer\CoderageXII\DataSnapDemo\FormUnit1.cpp</Transaction>
+    <Transaction>2018/02/14 05:53:55.000.967,=C:\Developer\CoderageXII\DataSnapDemo\ServerContainerUnit1.cpp</Transaction>
+    <Transaction>2018/02/14 05:53:55.000.061,=C:\Developer\CoderageXII\DataSnapDemo\ServerMethodsUnit1.cpp</Transaction>
+    <Transaction>2018/02/14 05:53:56.000.677,=C:\Developer\CoderageXII\DataSnapDemo\WebModuleUnit1.cpp</Transaction>
+    <Transaction>2018/02/14 05:53:57.000.765,=C:\Developer\CoderageXII\DataSnapDemo\js\serverfunctionexecutor.js</Transaction>
+    <Transaction>2018/02/14 05:53:57.000.939,=C:\Developer\CoderageXII\DataSnapDemo\js\serverfunctions.js</Transaction>
+    <Transaction>2018/02/14 05:53:57.000.880,=C:\Developer\CoderageXII\DataSnapDemo\js\callbackframework.js</Transaction>
+    <Transaction>2018/02/14 05:53:57.000.980,=C:\Developer\CoderageXII\DataSnapDemo\js\base64-min.js</Transaction>
+    <Transaction>2018/02/14 05:53:57.000.809,=C:\Developer\CoderageXII\DataSnapDemo\js\json2.js</Transaction>
+    <Transaction>2018/02/14 05:53:57.000.709,=C:\Developer\CoderageXII\DataSnapDemo\js\base64.js</Transaction>
+    <Transaction>2018/02/14 05:53:58.000.177,=C:\Developer\CoderageXII\DataSnapDemo\js\callbackframework-min.js</Transaction>
+    <Transaction>2018/02/14 05:53:58.000.031,=C:\Developer\CoderageXII\DataSnapDemo\js\json2-min.js</Transaction>
+    <Transaction>2018/02/14 05:53:58.000.099,=C:\Developer\CoderageXII\DataSnapDemo\js\serverfunctionexecutor-min.js</Transaction>
+  </Transactions>
+</BorlandProject>

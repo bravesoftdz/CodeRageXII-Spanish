@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/04/29 08:52:40.000.411,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/05/02 11:53:16.000.201,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/06/04 10:09:31.000.844,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/06/04 10:29:31.000.051,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/08/12 15:35:46.000.910,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\GridView1.pas</Transaction>
+    <Transaction>2015/08/12 15:35:48.000.993,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\DetailView1.pas</Transaction>
+    <Transaction>2016/03/08 08:49:33.000.325,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/07/05 18:59:33.000.585,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/05 17:09:46.000.219,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/05 17:14:34.000.796,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/10/24 03:02:09.000.560,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/11/15 11:36:40.000.967,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2016/12/07 08:22:36.000.941,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/15 01:13:40.889,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/15 02:10:57.456,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\AppMovil\IBLite\Unit1.fmx=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/02/15 02:10:57.456,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\AppMovil\IBLite\Unit1.pas=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/15 02:11:09.085,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\AppMovil\IBLite\AppMovil.dproj=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="BHG7N16122013602"/>
+	</ActiveMobileDevice>
+</BorlandProject>

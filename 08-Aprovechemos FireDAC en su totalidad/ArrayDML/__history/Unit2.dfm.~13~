@@ -1,0 +1,97 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Array DML'
+  ClientHeight = 457
+  ClientWidth = 873
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbTiempo: TLabel
+    Left = 416
+    Top = 344
+    Width = 110
+    Height = 33
+    Caption = 'lbTiempo'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 873
+    Height = 305
+    Align = alTop
+    DataSource = DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object Abrir: TButton
+    Left = 32
+    Top = 344
+    Width = 75
+    Height = 25
+    Caption = 'Abrir'
+    TabOrder = 1
+    OnClick = AbrirClick
+  end
+  object Button1: TButton
+    Left = 128
+    Top = 344
+    Width = 81
+    Height = 25
+    Caption = 'Sin Array DML'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 232
+    Top = 344
+    Width = 89
+    Height = 25
+    Caption = 'Con Array DML'
+    TabOrder = 3
+  end
+  object DemocoderagexiiConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=DemoCodeRageXII')
+    ResourceOptions.AssignedValues = [rvAutoConnect, rvAutoReconnect]
+    LoginPrompt = False
+    OnLost = DemocoderagexiiConnectionLost
+    OnRecover = DemocoderagexiiConnectionRecover
+    Left = 745
+    Top = 16
+  end
+  object FDQuery1: TFDQuery
+    Connection = DemocoderagexiiConnection
+    FetchOptions.AssignedValues = [evMode, evLiveWindowParanoic]
+    FetchOptions.Mode = fmAll
+    SQL.Strings = (
+      'select CODIGO,'
+      'NOMBRE,'
+      'DIRECCION,'
+      'TELEFONO,'
+      'EMAIL from clientes')
+    Left = 744
+    Top = 128
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 744
+    Top = 232
+  end
+end

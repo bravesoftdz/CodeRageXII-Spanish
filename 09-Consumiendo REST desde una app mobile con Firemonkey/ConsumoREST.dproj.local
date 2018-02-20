@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/07/25 01:56:31.000.157,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/09/11 01:14:04.000.393,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/23 15:24:59.000.658,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/07/23 17:41:43.000.313,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/08 08:48:31.000.430,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/10 04:47:19.000.856,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/08/30 23:01:15.000.750,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/14 19:50:20.334,=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/14 22:47:37.714,C:\Users\edgar\Documents\Gaby\CodeRage\Prueba\UPrincipal.fmx=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2018/02/14 22:47:37.714,C:\Users\edgar\Documents\Gaby\CodeRage\Prueba\UPrincipal.pas=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/14 22:47:44.549,C:\Users\edgar\Documents\Gaby\CodeRage\Prueba\ConsumoREST.dproj=C:\Users\edgar\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="LGH7352393d83c"/>
+		<PMacProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

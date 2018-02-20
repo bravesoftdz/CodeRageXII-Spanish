@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/02/14 08:31:33.000.869,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project7PCH1.h</Transaction>
+    <Transaction>2018/02/14 08:31:33.000.773,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2018/02/14 08:32:03.000.148,C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.fmx=C:\Developer\CoderageXII\DataSnapClient\UFrmMain.fmx</Transaction>
+    <Transaction>2018/02/14 08:32:03.000.148,C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.h=C:\Developer\CoderageXII\DataSnapClient\UFrmMain.h</Transaction>
+    <Transaction>2018/02/14 08:32:03.000.148,C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.cpp=C:\Developer\CoderageXII\DataSnapClient\UFrmMain.cpp</Transaction>
+    <Transaction>2018/02/14 08:32:05.000.018,C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project7PCH1.h=C:\Developer\CoderageXII\DataSnapClient\Project7PCH1.h</Transaction>
+    <Transaction>2018/02/14 08:32:15.000.486,C:\Developer\CoderageXII\DataSnapClient\Project7PCH1.h=C:\Developer\CoderageXII\DataSnapClient\DatasnapClientPCH1.h</Transaction>
+    <Transaction>2018/02/14 08:32:15.000.511,C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project7.cbproj=C:\Developer\CoderageXII\DataSnapClient\DatasnapClient.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

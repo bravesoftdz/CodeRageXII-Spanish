@@ -1,0 +1,48 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited btnConsumir: TButton
+    Size.Width = 450.000000000000000000
+  end
+  inherited Layout1: TLayout
+    Size.Width = 450.000000000000000000
+    Size.Height = 622.000000000000000000
+    inherited TabControl1: TTabControl
+      Size.Width = 450.000000000000000000
+      Size.Height = 622.000000000000000000
+      Sizes = (
+        450s
+        622s
+        450s
+        622s)
+      inherited Tab1: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout2: TLayout
+          Size.Width = 450.000000000000000000
+          Size.Height = 622.000000000000000000
+          inherited lvDatos: TListView
+            Size.Width = 450.000000000000000000
+            Size.Height = 622.000000000000000000
+          end
+        end
+      end
+      inherited Tab2: TTabItem
+        ExplicitSize.cx = 8.000000000000000000
+        ExplicitSize.cy = 8.000000000000000000
+        inherited Layout3: TLayout
+          Size.Width = 450.000000000000000000
+          Size.Height = 622.000000000000000000
+          inherited edtNombre: TEdit
+            Size.Width = 450.000000000000000000
+          end
+          inherited Button1: TButton
+            Position.Y = 578.000000000000000000
+            Size.Width = 450.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,49 @@
+inherited Form1_Macintosh: TForm1_Macintosh
+  DesignerMasterStyle = 0
+  inherited Button1: TButton
+    Align = Scale
+    Position.Y = 104.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'searchtoolbuttonbordered'
+  end
+  inherited Edit1: TEdit
+    Align = Scale
+    TextSettings.HorzAlign = Center
+    Position.Y = 56.000000000000000000
+    Size.Height = 33.000000000000000000
+    CharCase = ecUpperCase
+  end
+  inherited Label1: TLabel
+    Align = Scale
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 16.000000000000000000
+    Size.Height = 25.000000000000000000
+    TextSettings.Font.Size = 14.000000000000000000
+  end
+  inherited StringGrid1: TStringGrid
+    Align = Scale
+    Size.Height = 477.000000000000000000
+    Viewport.Width = 353.000000000000000000
+    Viewport.Height = 477.000000000000000000
+    inherited StringColumn1: TStringColumn
+      Padding.Left = 15.000000000000000000
+    end
+    inherited StringColumn2: TStringColumn
+      Size.Width = 212.000000000000000000
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Align = Scale
+  end
+  inherited Button2: TButton
+    Align = Scale
+    Position.X = 392.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'escapetoolbuttonbordered'
+    Text = 'Salir'
+    OnClick = Button2Click
+  end
+end

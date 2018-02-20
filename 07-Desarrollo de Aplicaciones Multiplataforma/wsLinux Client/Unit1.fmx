@@ -1,0 +1,71 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 477
+  ClientWidth = 494
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 392.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 0
+    Text = 'Consulta'
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 392.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 392.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Filtro'
+    TabOrder = 2
+  end
+  object StringGrid1: TStringGrid
+    Align = Left
+    CanFocus = True
+    ClipChildren = True
+    ControlType = Platform
+    Size.Width = 353.000000000000000000
+    Size.Height = 455.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+    Viewport.Width = 333.000000000000000000
+    Viewport.Height = 430.000000000000000000
+    object StringColumn1: TStringColumn
+      Header = '         CLAVE'
+    end
+    object StringColumn2: TStringColumn
+      Header = '                  DESCRIPCI'#211'N'
+      Size.Width = 212.000000000000000000
+    end
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 455.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 494.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object Button2: TButton
+    Position.X = 368.000000000000000000
+    Position.Y = 192.000000000000000000
+    TabOrder = 5
+    Text = 'Button2'
+  end
+end

@@ -1,0 +1,359 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 478
+  ClientWidth = 445
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 445.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object Button1: TButton
+      Align = Right
+      Position.X = 365.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Agregar'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Left
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Guardar'
+      OnClick = Button2Click
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 445.000000000000000000
+    Size.Height = 438.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 5
+    TabPosition = PlatformDefault
+    Sizes = (
+      445s
+      412s
+      445s
+      412s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 78.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Empleados'
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 445.000000000000000000
+        Size.Height = 412.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 57.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Detalle'
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Text = '1'
+        Position.X = 152.000000000000000000
+        Position.Y = 70.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = 'Jose'
+        Position.X = 152.000000000000000000
+        Position.Y = 118.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Text = 'Castillo'
+        Position.X = 152.000000000000000000
+        Position.Y = 158.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit4: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Text = '1234'
+        Position.X = 152.000000000000000000
+        Position.Y = 198.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = '30/03/2018'
+        Position.X = 152.000000000000000000
+        Position.Y = 238.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit6: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Text = '123'
+        Position.X = 152.000000000000000000
+        Position.Y = 278.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit7: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        Text = '12'
+        Position.X = 152.000000000000000000
+        Position.Y = 318.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit8: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 7
+        Text = '1500'
+        Position.X = 152.000000000000000000
+        Position.Y = 358.000000000000000000
+        Size.Width = 145.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label1: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 70.000000000000000000
+        Text = 'C'#243'digo:'
+        TabOrder = 8
+      end
+      object Label2: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 118.000000000000000000
+        Text = 'Nombre'
+        TabOrder = 9
+      end
+      object Label3: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 158.000000000000000000
+        Text = 'Apellido'
+        TabOrder = 10
+      end
+      object Label4: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 206.000000000000000000
+        Text = 'Extensi'#243'n'
+        TabOrder = 11
+      end
+      object Label5: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 238.000000000000000000
+        Text = 'Fecha '
+        TabOrder = 12
+      end
+      object Label6: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 278.000000000000000000
+        Text = 'Area'
+        TabOrder = 13
+      end
+      object Label7: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 318.000000000000000000
+        Text = 'Pa'#237's'
+        TabOrder = 14
+      end
+      object Label8: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 358.000000000000000000
+        Text = 'Salario'
+        TabOrder = 15
+      end
+    end
+  end
+  object MyemployeeConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=MyEmployee')
+    Connected = True
+    LoginPrompt = False
+    Left = 308
+    Top = 21
+  end
+  object EmpleadoTable: TFDQuery
+    Active = True
+    AfterPost = EmpleadoTableAfterPost
+    Connection = MyemployeeConnection
+    UpdateOptions.AssignedValues = [uvAutoCommitUpdates]
+    UpdateOptions.AutoCommitUpdates = True
+    SQL.Strings = (
+      'SELECT * FROM EMPLEADO')
+    Left = 308
+    Top = 85
+    object EmpleadoTableEMP_NO: TIntegerField
+      AutoGenerateValue = arAutoInc
+      FieldName = 'EMP_NO'
+      Origin = 'EMP_NO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object EmpleadoTableFIRST_NAME: TStringField
+      FieldName = 'FIRST_NAME'
+      Origin = 'FIRST_NAME'
+      Required = True
+    end
+    object EmpleadoTableLAST_NAME: TStringField
+      FieldName = 'LAST_NAME'
+      Origin = 'LAST_NAME'
+      Required = True
+    end
+    object EmpleadoTablePHONE_EXT: TStringField
+      FieldName = 'PHONE_EXT'
+      Origin = 'PHONE_EXT'
+      Size = 4
+    end
+    object EmpleadoTableHIRE_DATE: TSQLTimeStampField
+      FieldName = 'HIRE_DATE'
+      Origin = 'HIRE_DATE'
+      Required = True
+    end
+    object EmpleadoTableDEPT_NO: TIntegerField
+      FieldName = 'DEPT_NO'
+      Origin = 'DEPT_NO'
+      Required = True
+    end
+    object EmpleadoTableJOB_COUNTRY: TStringField
+      FieldName = 'JOB_COUNTRY'
+      Origin = 'JOB_COUNTRY'
+      Required = True
+      Size = 15
+    end
+    object EmpleadoTableSALARY: TBCDField
+      FieldName = 'SALARY'
+      Origin = 'SALARY'
+      Required = True
+      Precision = 18
+      Size = 2
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = EmpleadoTable
+    ScopeMappings = <>
+    Left = 256
+    Top = 304
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 124
+    Top = 245
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'EMP_NO'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FIRST_NAME'
+      Control = Edit2
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'LAST_NAME'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'PHONE_EXT'
+      Control = Edit4
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'HIRE_DATE'
+      Control = Edit5
+      Track = False
+    end
+    object LinkControlToField6: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'DEPT_NO'
+      Control = Edit6
+      Track = False
+    end
+    object LinkControlToField7: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'JOB_COUNTRY'
+      Control = Edit7
+      Track = False
+    end
+    object LinkControlToField8: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'SALARY'
+      Control = Edit8
+      Track = False
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FIRST_NAME'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'EMP_NO'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

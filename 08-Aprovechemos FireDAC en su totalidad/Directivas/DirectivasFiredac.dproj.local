@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/10/03 14:27:40.000.054,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/11/01 16:41:31.000.918,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/11/21 09:25:03.000.094,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/12/18 18:15:41.000.591,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/12/20 09:47:29.000.101,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2017/12/29 10:58:51.000.721,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/02/12 06:22:31.000.009,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/02/15 15:07:06.000.939,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/02/15 22:48:41.000.762,=C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2018/02/15 23:12:52.000.932,C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.dfm=C:\CodeRAgeXII\CaeConexión\Unit2.dfm</Transaction>
+    <Transaction>2018/02/15 23:12:52.000.932,C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\CodeRAgeXII\CaeConexión\Unit2.pas</Transaction>
+    <Transaction>2018/02/15 23:13:13.000.879,C:\Users\jhonn\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\CodeRAgeXII\CaeConexión\RecuperaConexion.dproj</Transaction>
+    <Transaction>2018/02/16 00:58:46.073,C:\CodeRAgeXII\Directivas\DirectivasFiredac.dproj=C:\CodeRAgeXII\Directivas\RecuperaConexion.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacY iOSSimulator="iPhone5"/>
+		<NoProfile Android="WW5DEQ6DC6IJY5Y9"/>
+	</ActiveMobileDevice>
+</BorlandProject>

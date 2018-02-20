@@ -1,0 +1,58 @@
+inherited Form1_iPhone: TForm1_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited Button1: TButton
+    Align = Scale
+    Position.X = 255.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 44.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'searchtoolbuttonbordered'
+  end
+  inherited Edit1: TEdit
+    Align = Scale
+    Position.X = 250.000000000000000000
+    Size.Width = 60.000000000000000000
+    Size.Height = 30.000000000000000000
+    CharCase = ecUpperCase
+  end
+  inherited Label1: TLabel
+    Align = Scale
+    Position.X = 250.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 60.000000000000000000
+    Size.Height = 25.000000000000000000
+  end
+  inherited StringGrid1: TStringGrid
+    Align = Scale
+    Size.Width = 241.000000000000000000
+    Size.Height = 460.000000000000000000
+    Viewport.Width = 241.000000000000000000
+    Viewport.Height = 460.000000000000000000
+    inherited StringColumn1: TStringColumn
+      Header = 'CLAVE'
+      Size.Width = 70.000000000000000000
+    end
+    inherited StringColumn2: TStringColumn
+      Header = '         DESCRIPCI'#211'N'
+      Size.Width = 146.000000000000000000
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Align = Scale
+    Position.Y = 438.000000000000000000
+    Size.Width = 320.000000000000000000
+  end
+  inherited Button2: TButton
+    Align = Scale
+    Position.X = 255.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 44.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'escapetoolbuttonbordered'
+    OnClick = Button2Click
+  end
+end

@@ -1,0 +1,66 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Button1: TButton
+      Position.X = 370.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+    inherited Button2: TButton
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 647.000000000000000000
+    TabHeight = 49.000000000000000000
+    Sizes = (
+      450s
+      598s
+      450s
+      598s)
+    inherited TabItem1: TTabItem
+      Size.Width = 225.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited ListView1: TListView
+        Size.Width = 450.000000000000000000
+        Size.Height = 598.000000000000000000
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 225.000000000000000000
+      Size.Height = 49.000000000000000000
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Edit1: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit2: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit3: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit4: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit5: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit6: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit7: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited Edit8: TEdit
+        Size.Height = 32.000000000000000000
+      end
+    end
+  end
+end

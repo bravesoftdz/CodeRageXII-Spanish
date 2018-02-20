@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/01/17 20:46:25.000.793,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/02/08 20:25:07.000.347,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2018/02/08 20:25:10.000.718,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\ServerConst1.pas</Transaction>
+    <Transaction>2018/02/08 20:25:41.000.203,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2018/02/08 20:25:41.000.397,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\ServerConst1.pas</Transaction>
+    <Transaction>2018/02/08 20:25:51.000.447,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\wsLinuxIntf.pas</Transaction>
+    <Transaction>2018/02/08 20:25:51.000.397,=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\wsLinuxImpl.pas</Transaction>
+    <Transaction>2018/02/08 20:26:25.000.447,C:\Users\gonza\Documents\Embarcadero\Studio\Projects\wsLinuxIntf.pas=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WSDemo\wsLinuxIntf.pas</Transaction>
+    <Transaction>2018/02/08 20:26:27.000.069,C:\Users\gonza\Documents\Embarcadero\Studio\Projects\wsLinuxImpl.pas=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WSDemo\wsLinuxImpl.pas</Transaction>
+    <Transaction>2018/02/08 20:26:27.000.904,C:\Users\gonza\Documents\Embarcadero\Studio\Projects\ServerConst1.pas=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WSDemo\ServerConst1.pas</Transaction>
+    <Transaction>2018/02/08 20:26:30.000.699,C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WSDemo\WebModuleUnit1.pas</Transaction>
+    <Transaction>2018/02/08 20:26:30.000.699,C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WSDemo\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2018/02/08 20:26:36.000.197,C:\Users\gonza\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\gonza\Documents\Embarcadero\Studio\Projects\WSDemo\wsLinux.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

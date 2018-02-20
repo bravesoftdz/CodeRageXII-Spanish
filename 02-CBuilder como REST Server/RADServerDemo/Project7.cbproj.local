@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2018/02/14 11:22:39.354,=emsserverapi.bpi</Transaction>
+    <Transaction>2018/02/14 11:22:39.356,=rtl.bpi</Transaction>
+    <Transaction>2018/02/14 11:22:39.462,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2018/02/14 11:22:53.962,C:\Developer\CoderageXII\RADServerDemo\Unit6.dfm=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.dfm</Transaction>
+    <Transaction>2018/02/14 11:22:53.962,C:\Developer\CoderageXII\RADServerDemo\Unit6.h=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.h</Transaction>
+    <Transaction>2018/02/14 11:22:53.962,C:\Developer\CoderageXII\RADServerDemo\Unit6.cpp=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2018/02/14 11:22:56.494,C:\Developer\CoderageXII\RADServerDemo\Project7.cbproj=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project7.cbproj</Transaction>
+    <Transaction>2018/02/14 11:24:49.553,=C:\Program Files (x86)\Embarcadero\Studio\19.0\lib\win32\release\FireDAC.bpi</Transaction>
+    <Transaction>2018/02/14 11:24:49.567,=C:\Program Files (x86)\Embarcadero\Studio\19.0\lib\win32\release\FireDACCommon.bpi</Transaction>
+    <Transaction>2018/02/14 11:24:49.580,=C:\Program Files (x86)\Embarcadero\Studio\19.0\lib\win32\release\FireDACCommonDriver.bpi</Transaction>
+    <Transaction>2018/02/14 11:24:49.594,=C:\Program Files (x86)\Embarcadero\Studio\19.0\lib\win32\release\FireDACIBDriver.bpi</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,67 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  Quality = HighQuality
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited Button1: TButton
+    Align = Scale
+    ControlType = Platform
+    Position.X = 360.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'actiontoolbutton'
+  end
+  inherited Edit1: TEdit
+    Align = Scale
+    TextSettings.HorzAlign = Center
+    Position.X = 335.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 32.000000000000000000
+    CharCase = ecUpperCase
+  end
+  inherited Label1: TLabel
+    Align = Scale
+    Position.X = 335.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 25.000000000000000000
+  end
+  inherited StringGrid1: TStringGrid
+    Align = Scale
+    Size.Width = 329.000000000000000000
+    Size.Height = 665.000000000000000000
+    TextSettings.Font.Size = 10.000000000000000000
+    StyledSettings = [Family, Style, FontColor]
+    Viewport.Width = 329.000000000000000000
+    Viewport.Height = 665.000000000000000000
+    inherited StringColumn1: TStringColumn
+      Header = ' CLAVE'
+      Padding.Left = 10.000000000000000000
+      Size.Width = 60.000000000000000000
+    end
+    inherited StringColumn2: TStringColumn
+      Header = '          DESCRIPCI'#211'N'
+      Size.Width = 240.000000000000000000
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Position.Y = 673.000000000000000000
+    ShowSizeGrip = False
+    Size.Width = 450.000000000000000000
+    StyleLookup = 'statusbarstyle'
+  end
+  inherited Button2: TButton
+    Align = Scale
+    Position.Y = 176.000000000000000000
+    Size.Width = 48.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'escapetoolbutton'
+    OnClick = Button2Click
+  end
+end
